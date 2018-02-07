@@ -1,0 +1,35 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/0ae50155-b6fe-4b38-8292-2fc4bc792870 # 
+title: Employee
+version: 1.0
+/getemployees:
+  get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: 
+              [ {"ID": 1,"age":20,"name":"akshatha",
+                "salary":20000}, {"ID": 2,"age":25,"name":"akitha",
+                "salary":20000}]
+    
+      
+            
+
+/employee:
+  post:
+    body: 
+        application/json:
+            example: |
+              {
+                  "ID": 1,"age":20,"name":"akshatha",
+                "salary":20000
+              }
+
+    responses: 
+      200:
+        body: 
+          application/json:
+           example: |
+            {"message":"Flight added (but not really)"} 
+  

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.mule.tooling.runtime.muleServerLaunchType">
+<listAttribute key="Mpath"/>
+<stringAttribute key="Ppath" value="C:\Users\EAI\AnypointStudio\workspace\mule_soft\apdev-examples"/>
+<stringAttribute key="clear_data" value="NEVER"/>
+<booleanAttribute key="consoleEnabled" value="true"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.8.5.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="apdev-examples"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="apdev-examples"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:PermSize=128M -XX:MaxPermSize=256M&#13;&#10;-Dhttp.proxyHost=YOUR_PROXY_HOST -Dhttp.proxyPort=YOUR_PROXY_PORT"/>
+<intAttribute key="remote-debug-port" value="6664"/>
+<booleanAttribute key="remote-debug-suspend" value="false"/>
+</launchConfiguration>

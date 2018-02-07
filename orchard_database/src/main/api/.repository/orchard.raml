@@ -1,0 +1,144 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/65919e14-602c-4d17-ac03-5650146fd8b5 # 
+title: orchard
+version: 1.0
+
+/campusminds:
+  get:
+    queryParameters: 
+        code:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: 
+              [ {"ID": 1,"name":"akshatha"}]
+    
+      
+            
+
+    
+  post:
+    body: 
+          application/json:
+            example: |
+              {
+                  "ID":1,
+                  "name": "akshatha"
+                  
+              }
+
+    responses: 
+      200:
+        body: 
+          application/json:
+           example: |
+            {"message":"campusmind added (but not really)"}  
+  /{id}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {
+                    "ID":1,
+                    "name": "akshatha"
+                    
+                }
+/leads:
+  get:
+    queryParameters: 
+        code:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: 
+              [ {"l_id": 3,"l_name":"jhkj"}]
+    
+      
+            
+
+    
+  post:
+    body: 
+          application/json:
+            example: |
+              {
+                  "l_id":3,
+                  "l_name": "jhkj"
+                  
+              }
+
+    responses: 
+      200:
+        body: 
+          application/json:
+           example: |
+            {"message":"leads added (but not really)"}  
+  /{l_id}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {
+                    "l_id":3,
+                    "l_name": "jhkj"
+                    
+                }
+
+
+/orchard:
+  get:
+    queryParameters: 
+        code:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: 
+              [ {"track_id": 5,"track_name":"dotnet"}]
+    
+      
+            
+
+    
+  post:
+    body: 
+          application/json:
+            example: |
+              {
+                  "track_id":5,
+                  "track_name": "dotnet"
+                  
+              }
+
+    responses: 
+      200:
+        body: 
+          application/json:
+           example: |
+            {"message":"orchard added (but not really)"}  
+  /{id}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {
+                    "track_id":5,
+                    "track_name": "dotnet"
+                    
+                }
+
+    
+      
+      
+
+       
+
+        

@@ -1,0 +1,5 @@
+package voteexception;
+
+public class MinorException {
+	
+}

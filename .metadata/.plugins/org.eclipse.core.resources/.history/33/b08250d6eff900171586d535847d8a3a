@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd">
+ <http:listener-config name="global_HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://localhost:8081/resturents?wsdl" service="ResturentsService" port="ResturentsPort" serviceAddress="http://localhost:8081/resturents" connectorConfig="HTTP_Request_Configuration" doc:name="Web Service Consumer"/>
+    <http:request-config name="HTTP_Request_Configuration" doc:name="HTTP Request Configuration">
+        <http:proxy host="172.17.2.218" port="8085" username="M1042933" password="1si13is003@"/>
+    </http:request-config>
+    <flow name="globalFlow">
+        <http:listener config-ref="global_HTTP_Listener_Configuration" path="/insert" doc:name="HTTP"/>
+        <set-variable variableName="res_no" value="#[message.inboundProperties.'http.query.params'.res_no]" doc:name="Variable"/>
+        <set-variable variableName="res_name" value="#[message.inboundProperties.'http.query.params'.res_name]" doc:name="Variable"/>
+        <set-variable variableName="res_address" value="#[message.inboundProperties.'http.query.params'.res_address]" doc:name="Variable"/>
+        <set-variable variableName="admin" value="#[message.inboundProperties.'http.query.params'.admin]" doc:name="Variable"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="insert" doc:name="Web Service Consumer"/>
+    </flow>
+</mule>

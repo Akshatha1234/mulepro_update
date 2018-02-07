@@ -1,0 +1,9 @@
+package soapimplimentation;
+
+public class Hello {
+	public void first()
+	{
+		
+	}
+
+}

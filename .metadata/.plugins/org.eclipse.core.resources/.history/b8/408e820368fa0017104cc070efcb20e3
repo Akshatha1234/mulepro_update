@@ -1,0 +1,255 @@
+package com.resturents;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.ResultSet;
+import com.mysql.jdbc.Statement;
+
+@WebService
+public class Resturents {
+
+	@WebMethod
+	public void insert(int res_no,String res_name,String res_address,String admin) throws ClassNotFoundException
+	{
+		Connection conn=null;
+		Statement stmt=null;
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3360/bhubaneshwar","root","Welcome123");
+			stmt=(Statement) conn.createStatement();
+			if(admin=="mindtree")
+			{
+				String sql="insert into resturents" +
+						"values(res_no,res_name,res_address)";
+				stmt.executeUpdate(sql);
+			}
+			else
+			{
+				System.out.println("not an admin");
+			}
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally{
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}
+			try
+			{
+				if(conn!=null)
+				{
+					conn.close();
+				}
+			}catch(SQLException se)
+				{
+					se.printStackTrace();
+				}
+			}
+	}
+	@WebMethod
+	public void update(int res_no,String name,String address,String admin)
+	{
+		Connection conn=null;
+		Statement stmt=null;
+		try
+		{
+			conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3360/bhubaneshwar","root","Welcome123");
+			stmt=(Statement) conn.createStatement();
+			if(admin=="mindtree")
+			{
+				String sql="update resturents" +
+						"set res_name=name,res_address=address where res_no=res_no";
+			stmt.executeUpdate(sql);
+			}
+			else
+			{
+				System.out.println("not an admin");
+			}
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally{
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}
+			try
+			{
+				if(conn!=null)
+				{
+					conn.close();
+				}
+			}catch(SQLException se)
+				{
+					se.printStackTrace();
+				}
+			}
+	}
+	@WebMethod
+	public void delete(int res_no,String admin)
+	{
+		Connection conn=null;
+		Statement stmt=null;
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3360/bhubaneshwar","root","Welcome123");
+			stmt=(Statement) conn.createStatement();
+			if(admin=="mindtree")
+			{
+			String sql="delete from resturents" +
+						"where res_no=res_no" ;
+			stmt.executeUpdate(sql);
+		}
+			else
+			{
+				System.out.println("not an admin");
+			}
+			
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally{
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}
+			try
+			{
+				if(conn!=null)
+				{
+					conn.close();
+				}
+			}catch(SQLException se)
+				{
+					se.printStackTrace();
+				}
+			}
+	}
+	@WebMethod
+	public void DisplayAll()
+	{
+		Connection conn=null;
+		Statement stmt=null;
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3360/bhubaneshwar","root","Welcome123");
+			stmt=(Statement) conn.createStatement();
+			String sql="select res_no,res_name,res_address from resturents";
+			ResultSet rs=(ResultSet) stmt.executeQuery(sql);
+			stmt.executeUpdate(sql);
+			while(rs.next()){
+				int res_no1=rs.getInt("res_no");
+				String name=rs.getString("res_name");
+				String address=rs.getString("res_address");
+				
+				System.out.println(res_no1);
+				System.out.println(name);
+				System.out.println(address);
+			}
+			rs.close();
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally{
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}
+			try
+			{
+				if(conn!=null)
+				{
+					conn.close();
+				}
+			}catch(SQLException se)
+				{
+					se.printStackTrace();
+				}
+			}
+}
+	@WebMethod
+	public void Search_address(String name)
+	{
+		Connection conn=null;
+		Statement stmt=null;
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3360/bhubaneshwar","root","Welcome123");
+			stmt=(Statement) conn.createStatement();
+			String sql="select res_no,res_name,res_address from resturents";
+			ResultSet rs=(ResultSet) stmt.executeQuery(sql);
+			stmt.executeUpdate(sql);
+			while(rs.next()){
+				String address=rs.getString("res_address");
+				if(name==rs.getString("res_name"))
+				{
+					System.out.println(address);
+				}
+			}
+			rs.close();
+		}
+		catch(SQLException se)
+		{
+			se.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally{
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}
+			try
+			{
+				if(conn!=null)
+				{
+					conn.close();
+				}
+			}catch(SQLException se)
+				{
+					se.printStackTrace();
+				}
+			}
+}
+}

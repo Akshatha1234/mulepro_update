@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "example"
+        }
+    },
+    "id": "070c4732-6f6d-497d-949c-e28d94f6379c",
+    "version": "5.2.0.0"
+}

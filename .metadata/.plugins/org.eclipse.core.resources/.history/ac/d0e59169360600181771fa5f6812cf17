@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/850b4ec6-0e60-406c-b0b5-a6128e850bab" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="flights.raml"/>
+    </http:request-config>
+    <http:request-config name="HTTP_Request_Configuration1" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/850b4ec6-0e60-406c-b0b5-a6128e850bab" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="flights.raml"/>
+    </http:request-config>
+    <http:request-config name="HTTP_Request_Configuration2" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/850b4ec6-0e60-406c-b0b5-a6128e850bab" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="flights.raml"/>
+        <http:proxy host="172.17.2.218" port="8085" username="M1042933" password="1si13is003@"/>
+    </http:request-config>
+    <flow name="data-transformFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration2" path="/flights" method="GET" doc:name="HTTP"/>
+    </flow>
+</mule>

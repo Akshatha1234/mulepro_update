@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"578b8442-1792-4b43-b18e-9947369c2bed","userId"\:"AkshathaKA","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=578b8442-1792-4b43-b18e-9947369c2bed
+current.user=AkshathaKA
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"AkshathaKA"\:{"restws"\:"{\\"applicationName\\"\:\\"restws-ka\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{\\"env\\"\:\\"DEV\\"}}"}}}

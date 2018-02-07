@@ -1,0 +1,13 @@
+package com.resturents;
+
+import javax.jws.WebService;
+
+@WebService
+public interface Res_inter {
+
+	public void insert(int res_no,String res_name,String res_address,String admin);
+	public void update(int res_no,String name,String address,String admin);
+	public void delete(int res_no,String admin);
+	public void DisplayAll();
+	public void Search_address(String name);
+}

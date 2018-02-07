@@ -1,0 +1,69 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/850b4ec6-0e60-406c-b0b5-a6128e850bab # 
+title: Flights
+version: 1.0
+
+/flights:
+  get:
+    queryParameters: 
+        code:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: 
+              [{
+                  "ID":1,
+                  "code": "GQ574",
+                  "price": 399,
+                  "departureDate": "2016/12/20",
+                  "origin": "ORD",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+              }]
+    
+      
+            
+
+    
+  post:
+    body: 
+          application/json:
+            example: |
+              {
+                  "ID":1,
+                  "code": "GQ574",
+                  "price": 399,
+                  "departureDate": "2016/12/20",
+                  "origin": "ORD",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+              }
+
+    responses: 
+      200:
+        body: 
+          application/json:
+           example: |
+            {"message":"Flight added (but not really)"}  
+  /{id}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {
+                    "ID":1,
+                    "code": "GQ574",
+                    "price": 399,
+                    "departureDate": "2016/12/20",
+                    "origin": "ORD",
+                    "destination": "SFO",
+                   "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+                }
+
+    

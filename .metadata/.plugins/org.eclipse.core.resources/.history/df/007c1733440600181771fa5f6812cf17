@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+    <http:request-config name="HTTP_Request_Configuration" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/0ae50155-b6fe-4b38-8292-2fc4bc792870" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="employee.raml"/>
+        <http:proxy host="172.17.2.218" port="8085" username="M1042933" password="1si13is003@"/>
+    </http:request-config>
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="employee" doc:name="MySQL Configuration"/>
+    <flow name="helloFlow">
+        <http:listener config-ref="employee-httpListenerConfig" path="/hi" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/getemployees" method="GET" doc:name="HTTP"/>
+    </flow>
+    <flow name="helloFlow1">
+        <http:listener config-ref="employee-httpListenerConfig" path="/hi" allowedMethods="POST" doc:name="HTTP"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[insert into emp_details values(#[payload.id],#[payload.first_name],#[payload.last_name],#[payload.salary],#[payload.dept]);]]></db:parameterized-query>
+        </db:insert>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output text/java
+---
+{
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <set-payload value="#[payload]" mimeType="text/plain" doc:name="Set Payload"/>
+    </flow>
+</mule>

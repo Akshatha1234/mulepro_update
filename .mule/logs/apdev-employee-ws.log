@@ -1,0 +1,70 @@
+2017-12-29 19:33:53,013 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-employee-ws'                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-29 19:33:53,488 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-29 19:33:53,769 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-29 19:33:54,073 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-29 19:33:54,073 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-12-29 19:33:54,292 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3d6300e8: startup date [Fri Dec 29 19:33:54 IST 2017]; root of context hierarchy
+2017-12-29 19:33:57,324 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-29 19:33:59,204 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-29 19:34:00,543 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\M1042933\AnypointStudio\workspace\.mule\.\.mule\apdev-employee-ws\queue-tx-log\tx1.log and C:\Users\M1042933\AnypointStudio\workspace\.mule\.\.mule\apdev-employee-ws\queue-tx-log\tx2.log
+2017-12-29 19:34:00,580 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\M1042933\AnypointStudio\workspace\.mule\.\.mule\apdev-employee-ws\queue-xa-tx-log\tx1.log and C:\Users\M1042933\AnypointStudio\workspace\.mule\.\.mule\apdev-employee-ws\queue-xa-tx-log\tx2.log
+2017-12-29 19:34:00,768 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-29 19:34:00,784 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: employee-main
+2017-12-29 19:34:00,784 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2017-12-29 19:34:00,799 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2017-12-29 19:34:00,799 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2017-12-29 19:34:00,799 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2017-12-29 19:34:00,799 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2017-12-29 19:34:00,846 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: employee-main.stage1
+2017-12-29 19:34:00,874 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: employee-console
+2017-12-29 19:34:00,874 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@79f90a3a
+2017-12-29 19:34:00,890 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: employee-console.stage1
+2017-12-29 19:34:00,890 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/getemployees:employee-config
+2017-12-29 19:34:00,890 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4ed9f7b1
+2017-12-29 19:34:00,906 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/getemployees:employee-config.stage1
+2017-12-29 19:34:00,906 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/employee:employee-config
+2017-12-29 19:34:00,906 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29050de5
+2017-12-29 19:34:00,906 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/employee:employee-config.stage1
+2017-12-29 19:34:01,939 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2017-12-29 19:34:02,885 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\M1042933\AnypointStudio\workspace\.mule\apps\apdev-employee-ws\employee.xml'}]"
+2017-12-29 19:34:02,885 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\M1042933\AnypointStudio\workspace\.mule\apps\apdev-employee-ws\employee.xml'}]"
+2017-12-29 19:34:05,970 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-employee-ws'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-29 19:34:05,974 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-29 19:34:05,974 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-29 19:34:06,146 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-12-29 19:34:06,146 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-29 19:34:06,146 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-29 19:34:06,146 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: employee-main
+2017-12-29 19:34:06,161 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: employee-main.stage1
+2017-12-29 19:34:06,177 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2017-12-29 19:34:06,177 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: employee-console
+2017-12-29 19:34:06,177 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: employee-console.stage1
+2017-12-29 19:34:06,177 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/getemployees:employee-config
+2017-12-29 19:34:06,177 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/getemployees:employee-config.stage1
+2017-12-29 19:34:06,177 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/employee:employee-config
+2017-12-29 19:34:06,177 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/employee:employee-config.stage1
+2017-12-29 19:34:06,302 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-29 19:34:06,357 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-employee-ws                                     *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************

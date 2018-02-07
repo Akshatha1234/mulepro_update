@@ -1,0 +1,343 @@
+INFO  2018-01-12 16:42:06,204 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'newone'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:42:06,251 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'newone'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app orchard_database
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app webapp
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app webapp
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+INFO  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-01-12 16:42:06,267 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2018-01-12 16:42:06,282 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-01-12 16:42:06,282 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2018-01-12 16:42:06,282 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@33d6066f: startup date [Fri Jan 12 16:42:06 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:42:06,361 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-01-12 16:42:06,470 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2018-01-12 16:42:06,501 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+WARN  2018-01-12 16:42:06,501 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:06,501 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:06,501 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:06,501 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2018-01-12 16:42:06,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx2.log
+INFO  2018-01-12 16:42:06,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx2.log
+INFO  2018-01-12 16:42:06,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-01-12 16:42:06,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow1
+INFO  2018-01-12 16:42:06,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@48fe99d
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow1.stage1
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Employee_Get
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7f923bf4
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Employee_Get.stage1
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: get_id
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7b179d9e
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: get_id.stage1
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@490ebd11
+INFO  2018-01-12 16:42:06,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow.stage1
+INFO  2018-01-12 16:42:06,611 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:42:06,611 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:42:06,611 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-01-12 16:42:06,611 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2018-01-12 16:42:06,673 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@21694e53: startup date [Fri Jan 12 16:42:06 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:42:07,667 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2018-01-12 16:42:07,961 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:07,961 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:07,961 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:07,961 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:42:08,367 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2018-01-12 16:42:08,931 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx2.log
+INFO  2018-01-12 16:42:08,946 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx2.log
+INFO  2018-01-12 16:42:09,024 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-01-12 16:42:09,024 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow1
+INFO  2018-01-12 16:42:09,024 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6c8f60f3
+INFO  2018-01-12 16:42:09,039 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow1.stage1
+INFO  2018-01-12 16:42:09,055 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Employee_Get
+INFO  2018-01-12 16:42:09,055 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3fc7c734
+INFO  2018-01-12 16:42:09,055 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: Employee_Get.stage1
+INFO  2018-01-12 16:42:09,383 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: get_id
+INFO  2018-01-12 16:42:09,383 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67332b1e
+INFO  2018-01-12 16:42:09,383 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: get_id.stage1
+INFO  2018-01-12 16:42:09,383 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow
+INFO  2018-01-12 16:42:09,383 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2f677247
+INFO  2018-01-12 16:42:09,383 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow.stage1
+INFO  2018-01-12 16:42:09,446 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:42:09,446 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'newone'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8099
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:42:09,617 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: restdbFlow1
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: restdbFlow1.stage1
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Employee_Get
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Employee_Get.stage1
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: get_id
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: get_id.stage1
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: restdbFlow
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: restdbFlow.stage1
+INFO  2018-01-12 16:42:09,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2018-01-12 16:42:09,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: newone                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2018-01-12 16:42:12,481 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'newone'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:42:12,498 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-01-12 16:42:12,498 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+ERROR 2018-01-12 16:42:12,545 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+********************************************************************************
+Message               : Failed to invoke lifecycle phase "start" on object: org.mule.module.http.internal.listener.DefaultHttpListenerConfig@22c53d82
+Element               : /HTTP_Listener_Configuration @ app:newone.xml:15 (HTTP Listener Configuration)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bindToChannelAndAddress(TCPNIOBindingHandler.java:131)
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bind(TCPNIOBindingHandler.java:88)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:239)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:219)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:210)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyServer.start(GrizzlyServer.java:41)
+	at org.mule.module.http.internal.listener.DefaultHttpListenerConfig.start(DefaultHttpListenerConfig.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237)
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:99)
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:71)
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:155)
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:126)
+	at org.mule.registry.AbstractRegistryBroker.fireLifecycle(AbstractRegistryBroker.java:88)
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:141)
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:91)
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:87)
+	at org.mule.lifecycle.MuleContextLifecycleManager.invokePhase(MuleContextLifecycleManager.java:69)
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:61)
+	at org.mule.DefaultMuleContext.start(DefaultMuleContext.java:317)
+	at org.mule.module.launcher.application.DefaultMuleApplication.start(DefaultMuleApplication.java:139)
+	at org.mule.module.launcher.artifact.ArtifactWrapper$4.execute(ArtifactWrapper.java:105)
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136)
+	at org.mule.module.launcher.artifact.ArtifactWrapper.start(ArtifactWrapper.java:100)
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:26)
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:317)
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:172)
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:261)
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:76)
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.deployPackedApps(DeploymentDirectoryWatcher.java:279)
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:151)
+	at org.mule.module.launcher.MuleDeploymentService.start(MuleDeploymentService.java:134)
+	at org.mule.module.launcher.MuleContainer.start(MuleContainer.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mule.tooling.server.application.ApplicationDeployer.main(ApplicationDeployer.java:33)
+
+********************************************************************************
+
+INFO  2018-01-12 16:42:12,545 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'newone'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:42:12,560 [main] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2018-01-12 16:42:12,560 [main] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow1
+INFO  2018-01-12 16:42:12,560 [main] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow1.stage1
+INFO  2018-01-12 16:42:12,560 [main] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Employee_Get
+INFO  2018-01-12 16:42:12,560 [main] org.mule.processor.SedaStageLifecycleManager: Disposing service: Employee_Get.stage1
+INFO  2018-01-12 16:42:12,560 [main] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: get_id
+INFO  2018-01-12 16:42:12,560 [main] org.mule.processor.SedaStageLifecycleManager: Disposing service: get_id.stage1
+INFO  2018-01-12 16:42:12,560 [main] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow
+INFO  2018-01-12 16:42:12,560 [main] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow.stage1
+INFO  2018-01-12 16:42:12,560 [main] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2018-01-12 16:42:12,654 [main] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@21694e53: startup date [Fri Jan 12 16:42:06 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:42:12,810 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "newone" shut down normally on: 1/12/18 4:42 PM        *
+* Up for: 0 days, 0 hours, 0 mins, 0.329 sec                         *
+**********************************************************************
+INFO  2018-01-12 16:43:09,790 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'newone'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:09,790 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: restdbFlow1
+INFO  2018-01-12 16:43:09,790 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:09,962 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Employee_Get
+INFO  2018-01-12 16:43:09,962 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Employee_Get.stage1
+INFO  2018-01-12 16:43:10,165 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: get_id
+INFO  2018-01-12 16:43:10,165 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: get_id.stage1
+INFO  2018-01-12 16:43:10,369 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: restdbFlow
+INFO  2018-01-12 16:43:10,369 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: restdbFlow.stage1
+INFO  2018-01-12 16:43:10,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2018-01-12 16:43:10,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8099
+INFO  2018-01-12 16:43:10,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2018-01-12 16:43:10,579 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'newone'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow1
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Employee_Get
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Employee_Get.stage1
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: get_id
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: get_id.stage1
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow.stage1
+INFO  2018-01-12 16:43:10,595 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2018-01-12 16:43:10,626 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@33d6066f: startup date [Fri Jan 12 16:42:06 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:43:10,798 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "newone" shut down normally on: 1/12/18 4:43 PM        *
+* Up for: 0 days, 0 hours, 1 mins, 1.181 sec                         *
+**********************************************************************
+INFO  2018-01-12 16:43:10,954 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'newone'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app orchard_database
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app restdb
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app webapp
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app webapp
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+WARN  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app newone
+INFO  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2018-01-12 16:43:10,970 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2018-01-12 16:43:10,986 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@b2c1a67: startup date [Fri Jan 12 16:43:10 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:43:11,111 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2018-01-12 16:43:11,142 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:43:11,142 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:43:11,142 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2018-01-12 16:43:11,142 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2018-01-12 16:43:11,204 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-tx-log\tx2.log
+INFO  2018-01-12 16:43:11,204 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\.\.mule\newone\queue-xa-tx-log\tx2.log
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow1
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2aa2616c
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Employee_Get
+INFO  2018-01-12 16:43:11,220 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@64d9b421
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Employee_Get.stage1
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: get_id
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3257c159
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: get_id.stage1
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: restdbFlow
+INFO  2018-01-12 16:43:11,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11d059
+INFO  2018-01-12 16:43:11,251 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: restdbFlow.stage1
+INFO  2018-01-12 16:43:11,282 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:43:11,282 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\mule_soft\.mule\apps\newone\newone.xml'}]"
+INFO  2018-01-12 16:43:14,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'newone'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:14,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2018-01-12 16:43:14,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8099
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: restdbFlow1
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Employee_Get
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Employee_Get.stage1
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: get_id
+INFO  2018-01-12 16:43:14,321 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: get_id.stage1
+INFO  2018-01-12 16:43:14,337 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: restdbFlow
+INFO  2018-01-12 16:43:14,337 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: restdbFlow.stage1
+INFO  2018-01-12 16:43:14,337 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2018-01-12 16:43:14,353 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: newone                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2018-01-12 16:43:19,366 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'newone'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:19,366 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: restdbFlow1
+INFO  2018-01-12 16:43:19,366 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:19,437 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Employee_Get
+INFO  2018-01-12 16:43:19,437 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Employee_Get.stage1
+INFO  2018-01-12 16:43:19,640 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: get_id
+INFO  2018-01-12 16:43:19,640 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: get_id.stage1
+INFO  2018-01-12 16:43:19,843 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: restdbFlow
+INFO  2018-01-12 16:43:19,843 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: restdbFlow.stage1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8099
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'newone'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow1.stage1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Employee_Get
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Employee_Get.stage1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: get_id
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: get_id.stage1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: restdbFlow
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: restdbFlow.stage1
+INFO  2018-01-12 16:43:20,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2018-01-12 16:43:20,062 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@b2c1a67: startup date [Fri Jan 12 16:43:10 IST 2018]; root of context hierarchy
+INFO  2018-01-12 16:43:20,234 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "newone" shut down normally on: 1/12/18 4:43 PM        *
+* Up for: 0 days, 0 hours, 0 mins, 5.928 sec                         *
+**********************************************************************

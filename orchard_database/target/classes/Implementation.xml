@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="mindtree" doc:name="MySQL Configuration"/>
+    <flow name="campus_getid">
+        <set-variable variableName="var" value="#[message.inboundProperties.'http.uri.params'.id]" doc:name="Variable"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from campusminds where id=#[flowVars.var]]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="leads_getid">
+        <set-variable variableName="var" value="#[message.inboundProperties.'http.uri.params'.l_id]" doc:name="Variable"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from leads where l_id=#[flowVars.var]]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="orchard_getid">
+        <set-variable variableName="var" value="#[message.inboundProperties.'http.uri.params'.id]" doc:name="Variable"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from orchard where track_id=#[flowVars.var]]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="campusmind_post">
+        <set-variable variableName="id" value="#[message.inboundProperties.'http.query.params'.id]" doc:name="Variable"/>
+        <set-variable variableName="name" value="#[message.inboundProperties.'http.query.params'.name]" doc:name="Variable"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[insert into campusminds values(#[flowVars.id],#[flowVars.name])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+    <flow name="Leads_post">
+        <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="JSON to Object"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[insert into leads values(#[payload.l_id],#[payload.l_name])]]></db:parameterized-query>
+        </db:insert>
+        <set-payload value="successfully inserted" doc:name="Set Payload"/>
+    </flow>
+    <flow name="orchad_post">
+        <set-variable variableName="track_id" value="#[message.inboundProperties.'http.query.params'.track_id]" doc:name="Variable"/>
+        <set-variable variableName="trcak_name" value="#[message.inboundProperties.'http.query.params'.trcak_name]" doc:name="Variable"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[insert into orchard values(#[flowVars.trcak_id],#[flowVars.track_name])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+    <flow name="campus_get">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from campusminds;]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message" metadata:id="b6b5e30c-febd-4e54-9579-34d20b0cb056">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	ID: payload01.id,
+	name: payload01.name
+})]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+    <flow name="leads_get">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from leads;]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message" metadata:id="f7b931c8-760b-4222-ab07-d93fc34c30cb">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	ID: payload01.l_id,
+	name: payload01.l_name
+})]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+    <flow name="orchard_get">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[select * from orchard;]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message" metadata:id="070c4732-6f6d-497d-949c-e28d94f6379c">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	ID: payload01.track_id,
+	name: payload01.track_name
+})]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+</mule>

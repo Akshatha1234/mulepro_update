@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+    <http:request-config name="HTTP_Request_Configuration" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/0ae50155-b6fe-4b38-8292-2fc4bc792870" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="employee.raml"/>
+        <http:proxy host="172.17.2.218" port="8085" username="M1042933" password="1si13is003@"/>
+    </http:request-config>
+    <flow name="helloFlow">
+        <http:listener config-ref="employee-httpListenerConfig" path="/hi" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/getemployees" method="GET" doc:name="HTTP"/>
+    </flow>
+    <flow name="helloFlow1">
+        <http:listener config-ref="employee-httpListenerConfig" path="/hi" allowedMethods="POST" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/employee" method="POST" doc:name="HTTP"/>
+    </flow>
+</mule>

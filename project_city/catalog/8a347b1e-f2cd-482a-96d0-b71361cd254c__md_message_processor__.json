@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "resturents"
+        }
+    },
+    "id": "8a347b1e-f2cd-482a-96d0-b71361cd254c",
+    "version": "5.2.0.0"
+}

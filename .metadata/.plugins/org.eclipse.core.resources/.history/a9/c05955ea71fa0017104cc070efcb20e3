@@ -1,0 +1,5 @@
+package com.resturents;
+
+public interface Res_inter {
+
+}

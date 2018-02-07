@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "webser"
+        }
+    },
+    "id": "5fdc1b26-9e7f-4328-a166-9a8a7fc5c5a8",
+    "version": "5.2.0.0"
+}

@@ -1,0 +1,274 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>hello</id>
+        <displayName>hello</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://resturents.com/</namespaceURI>
+                <localPart>hello</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://resturents.com/</namespaceURI>
+          <localPart>hello</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://resturents.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://resturents.com/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&lt;xs:element name=&quot;DisplayAll&quot; type=&quot;tns:DisplayAll&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;DisplayAllResponse&quot; type=&quot;tns:DisplayAllResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;Search_address&quot; type=&quot;tns:Search_address&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;Search_addressResponse&quot; type=&quot;tns:Search_addressResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;delete&quot; type=&quot;tns:delete&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;deleteResponse&quot; type=&quot;tns:deleteResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;hello&quot; type=&quot;tns:hello&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;helloResponse&quot; type=&quot;tns:helloResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;insert&quot; type=&quot;tns:insert&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;insertResponse&quot; type=&quot;tns:insertResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;update&quot; type=&quot;tns:update&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;updateResponse&quot; type=&quot;tns:updateResponse&quot;/&gt;&#xd;
+&lt;xs:complexType name=&quot;hello&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;helloResponse&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;insert&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg2&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg3&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;insertResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;update&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg2&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg3&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;updateResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;delete&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;deleteResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;Search_address&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg0&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;Search_addressResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;DisplayAll&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;DisplayAllResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>file:/C:/Users/EAI/AnypointStudio/workspace/mule_soft/project_city/src/main/wsdl/simple.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://resturents.com/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>helloResponse</id>
+        <displayName>helloResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://resturents.com/</namespaceURI>
+                <localPart>helloResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://resturents.com/</namespaceURI>
+          <localPart>helloResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://resturents.com/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://resturents.com/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&lt;xs:element name=&quot;DisplayAll&quot; type=&quot;tns:DisplayAll&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;DisplayAllResponse&quot; type=&quot;tns:DisplayAllResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;Search_address&quot; type=&quot;tns:Search_address&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;Search_addressResponse&quot; type=&quot;tns:Search_addressResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;delete&quot; type=&quot;tns:delete&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;deleteResponse&quot; type=&quot;tns:deleteResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;hello&quot; type=&quot;tns:hello&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;helloResponse&quot; type=&quot;tns:helloResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;insert&quot; type=&quot;tns:insert&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;insertResponse&quot; type=&quot;tns:insertResponse&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;update&quot; type=&quot;tns:update&quot;/&gt;&#xd;
+&lt;xs:element name=&quot;updateResponse&quot; type=&quot;tns:updateResponse&quot;/&gt;&#xd;
+&lt;xs:complexType name=&quot;hello&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;helloResponse&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;insert&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg2&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg3&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;insertResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;update&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg2&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg3&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;updateResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;delete&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg1&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;deleteResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;Search_address&quot;&gt;&#xd;
+&lt;xs:sequence&gt;&#xd;
+&lt;xs:element minOccurs=&quot;0&quot; name=&quot;arg0&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&lt;/xs:sequence&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;Search_addressResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;DisplayAll&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;xs:complexType name=&quot;DisplayAllResponse&quot;&gt;&#xd;
+&lt;xs:sequence/&gt;&#xd;
+&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Users/EAI/AnypointStudio/workspace/mule_soft/project_city/src/main/wsdl/simple.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://resturents.com/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>

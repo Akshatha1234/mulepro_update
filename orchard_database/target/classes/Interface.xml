@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <http:listener-config name="orchard-httpListenerConfig" host="localhost" port="5678" doc:name="HTTP Listener Configuration"/>
+    <apikit:config name="orchard-config" raml="orchard.raml" consoleEnabled="false" doc:name="Router"/>
+    <flow name="orchard-main">
+        <http:listener config-ref="orchard-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
+        <apikit:router config-ref="orchard-config" doc:name="APIkit Router"/>
+        <exception-strategy ref="orchard-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="orchard-console">
+        <http:listener config-ref="orchard-httpListenerConfig" path="/console/*" doc:name="HTTP"/>
+        <apikit:console config-ref="orchard-config" doc:name="APIkit Console"/>
+    </flow>
+    <flow name="get:/campusminds:orchard-config">
+        <flow-ref name="campus_get" doc:name="campus_get"/>
+
+    </flow>
+    <flow name="get:/leads:orchard-config">
+        <flow-ref name="leads_get" doc:name="leads_get"/>
+
+    </flow>
+    <flow name="get:/orchard:orchard-config">
+        <flow-ref name="orchard_get" doc:name="orchard_get"/>
+
+    </flow>
+    <flow name="get:/campusminds/{id}:orchard-config">
+        <flow-ref name="campus_getid" doc:name="campus_getid"/>
+
+    </flow>
+    <flow name="get:/orchard/{id}:orchard-config">
+        <flow-ref name="orchard_getid" doc:name="orchard_getid"/>
+
+    </flow>
+    <flow name="get:/leads/{l_id}:orchard-config">
+        <flow-ref name="leads_getid" doc:name="leads_getid"/>
+
+    </flow>
+    <flow name="post:/campusminds:orchard-config">
+        <flow-ref name="campusmind_post" doc:name="campusmind_post"/>
+
+    </flow>
+    <flow name="post:/leads:orchard-config">
+        <flow-ref name="Leads_post" doc:name="Leads_post"/>
+
+    </flow>
+    <flow name="post:/orchard:orchard-config">
+        <flow-ref name="orchad_post" doc:name="orchad_post"/>
+
+    </flow>
+    <apikit:mapping-exception-strategy name="orchard-apiKitGlobalExceptionMapping">
+        <apikit:mapping statusCode="404">
+            <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Resource not found&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="405">
+            <apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Method not allowed&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="415">
+            <apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Unsupported media type&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="406">
+            <apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Not acceptable&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="400">
+            <apikit:exception value="org.mule.module.apikit.exception.BadRequestException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Bad request&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+    </apikit:mapping-exception-strategy>
+</mule>
